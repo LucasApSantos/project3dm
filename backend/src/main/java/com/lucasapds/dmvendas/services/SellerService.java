@@ -8,15 +8,13 @@ import org.springframework.stereotype.Service;
 
 import com.lucasapds.dmvendas.dto.SellerDTO;
 import com.lucasapds.dmvendas.entities.Seller;
-import com.lucasapds.dmvendas.repositories.SellerRepository;
-
-
+import com.lucasapds.dmvendas.repositories.SaleRepository;
 
 @Service
 public class SellerService {
 
 	@Autowired
-	private SellerRepository repository;
+	private SaleRepository repository;
 	
 	public List<SellerDTO> findAll(){
 		
